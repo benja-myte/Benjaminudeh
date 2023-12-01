@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="nemport.css">
+    <script src="https://kit.fontawesome.com/8d8e864534.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header section -->
+
+    <header>
+        <div class="head-div">
+
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#head-div" >Home</a></li>
+                    <li><a href="#abt-sect">About</a></li>
+                    <li><a href="#srv-sect">Services</a></li>
+                    <li><a href="#work-sect">Portfolio</a></li>
+                    <li><a href="#cnt-sect">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="head-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <br> <span>Udeh</span> Benjamin</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+
+    <section id="abt-sect">
+        <div class="abt-cont">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus magni facere quas accusantium assumenda, itaque ab debitis? Aperiam vero culpa quia magni dolorem voluptatem, ratione voluptatum tempore, architecto eos alias repudiandae consequatur soluta sapiente distinctio quam quos ducimus blanditiis quis.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="skills()">Skills</p>
+                        <p class="tab-links active2" onclick="experience()">Experience</p>
+                        <p class="tab-links active3" onclick="education()">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul> 
+                            <li><span>Web Design</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul> 
+                            <li><span>2023 - Current</span><br>Front-end Development Training at Flip to Tech institue.</li>
+                            <li><span>2023 - Current</span><br>Web Design Training at Flip to Tech institue.</li>
+                            <li><span>2019 - 2021</span><br>WRO Participant.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul> 
+                            <li><span>2023</span><br>Web Development Training at Flip to Tech institue.</li>
+                            <li><span>2021</span><br>SSCE at ISHS.</li>
+                            <li><span>2018</span><br>BECE at IJHS.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <section id="srv-sect">
+        <div class="srv-div">
+            <h1 class="sub-title">My Services</h1>
+            <div class="srv-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque provident dolorem in porro. Totam ipsa voluptate quas dolorem at repellendus?</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque provident dolorem in porro. Totam ipsa voluptate quas dolorem at repellendus?</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque provident dolorem in porro. Totam ipsa voluptate quas dolorem at repellendus?</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work Section -->
+
+    <section id="work-sect">
+        <div class="work-div">
+            <h1 class="sub-title">Recent Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cake-shop.png" alt="">
+                    <div class="layer">
+                        <h3>Cake Shop</h3>
+                        <p>The app connects you to the talented <br> people around the world. Download <br> it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/catering.png" alt="">
+                    <div class="layer">
+                        <h3>Catering Service</h3>
+                        <p>The app connects you to the talented <br> people around the world. Download <br> it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/login (2).png" alt="">
+                    <div class="layer">
+                        <h3>Login Page</h3>
+                        <p>The app connects you to the talented <br> people around the world. Download <br> it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="cnt-sect">
+        <div class="cnt-div">
+            <div class="row">
+
+                <div class="cnt-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://telegram.org"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="cnt-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer id="ft-sect">
+        <div class="copyright">
+            <p>copyright ©2023 Udeh Benjamin | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        document.querySelector('.active').style.color = '#ff004f'
+
+        function skills(){
+            document.getElementById('skills').style.display = 'block';
+            document.getElementById('experience').style.display = 'none';
+            document.getElementById('education').style.display = 'none';
+
+            document.querySelector('.active').style.color = '#ff004f';
+            document.querySelector('.active2').style.color = '#ababab';
+            document.querySelector('.active3').style.color = '#ababab';
+        }
+
+        function experience(){
+            document.getElementById('skills').style.display = 'none';
+            document.getElementById('experience').style.display = 'block';
+            document.getElementById('education').style.display = 'none';
+
+            document.querySelector('.active').style.color = '#ababab';
+            document.querySelector('.active2').style.color = '#ff004f';
+            document.querySelector('.active3').style.color = '#ababab';
+        }
+
+        function education(){
+            document.getElementById('skills').style.display = 'none';
+            document.getElementById('experience').style.display = 'none';
+            document.getElementById('education').style.display = 'block';
+
+            document.querySelector('.active').style.color = '#ababab';
+            document.querySelector('.active2').style.color = '#ababab';
+            document.querySelector('.active3').style.color = '#ff004f';
+        }
+
+
+       
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closeMenu(){
+            sidemenu.style.right = '-200px';
+        }
+
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbynhF0Rm8114h7ock9rWnOwgyo52TKGqP3Gclu-WhWJq8X9DC0by7dl0YrL9D9bwtDzrQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');
+  
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+
+
+
+</body>
+</html>
