@@ -33,6 +33,8 @@ nav{
     flex-wrap: wrap;
     background-color: rgba(85, 85, 85, 0.315);
     border-radius: 20px;
+    position: fixed;
+    width: 80%;
 }
 
 .logo{
@@ -377,9 +379,9 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/Udeh_Benjamin-removebg-preview.png);
     }
     .head-text{
         margin-top: 70%;
@@ -391,6 +393,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        margin-right: 20px;
     }
     nav ul{
         background: #ff9900;
@@ -442,4 +445,11 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -10px;
     display: block;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    header{
+        background-image: url(images/Udeh_Benjamin-removebg-preview.png);
+    }
 }
