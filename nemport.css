@@ -190,7 +190,7 @@ nav ul li a:hover::after{
 }
 .srv-list div{
     background-color: #262626;
-    padding: 40px;
+    padding: 20px 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
@@ -255,6 +255,7 @@ nav ul li a:hover::after{
     justify-content: center;
     text-align: center;
     transition: height 0.5s;
+    padding: 0px 5px;
 }
 .layer h3{
     font-size: 16px;
@@ -266,7 +267,7 @@ nav ul li a:hover::after{
     font-weight: 500;
 }
 .layer a{
-    margin-top: 20px;
+    margin-top: 5px;
     color: #ff9900;
     text-decoration: none;
     line-height: 60px;
@@ -380,10 +381,167 @@ nav .fa-solid{
 }
 
 
+/* css for dark mode & light mode */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background: #fff;
+    color: #222;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+body.light-mode .theme-toggle {
+    background: #222;
+    color: #fff;
+}
+.theme-toggle:focus {
+    outline: 2px solid #ff9900;
+}
+
+
+/* Light mode styles */
+body.light-mode {
+    background: #fff;
+    color: #222;
+}
+
+body.light-mode .head-div,
+body.light-mode .srv-div,
+body.light-mode .abt-cont,
+body.light-mode .work-div,
+body.light-mode .cnt-div,
+body.light-mode .copyright {
+    background: #f7f7f700;
+    color: #222;
+}
+
+body.light-mode .btn,
+body.light-mode .btn2 {
+    background: #222;
+    color: #fff;
+}
+
+body.light-mode .btn:hover,
+body.light-mode .btn2:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+body.light-mode input,
+body.light-mode textarea {
+    background: #fff;
+    color: #222;
+    border: 1px solid #818181;
+}
+
+body.light-mode .theme-toggle {
+    background: #222;
+    color: #fff;
+}
+
+/* Improved Light Mode Tweaks */
+
+/* Navbar */
+body.light-mode nav {
+    background-color: rgba(224, 224, 224, 0.9);
+}
+body.light-mode nav ul li a {
+    color: #222;
+}
+body.light-mode nav ul li a::after {
+    background: #ff9900;
+}
+
+/* Hero section background */
+body.light-mode header {
+    background-image: url(images/Udeh\ Benjamin\ Landscape\ background.png);
+    background-color: #ffffff;
+}
+
+/* About Me section */
+body.light-mode #abt-sect {
+    color: #444;
+}
+body.light-mode .sub-title {
+    color: #222;
+}
+
+/* Services section */
+body.light-mode .srv-list div {
+    background: #fff;
+    color: #222;
+    border: 1px solid #eee;
+}
+body.light-mode .srv-list div:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+/* Recent Projects (My Work) */
+body.light-mode .work-list,
+body.light-mode .work {
+    background: #fff;
+    color: #222;
+}
+body.light-mode .layer {
+    background: linear-gradient(rgba(255,255,255,0.7), #ff9900);
+}
+body.light-mode .layer a {
+    background: #222;
+    color: #fff;
+}
+
+/* Contact form */
+body.light-mode .cnt-left p,
+body.light-mode .cnt-left p i {
+    color: #222;
+}
+body.light-mode form input,
+body.light-mode form textarea {
+    background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+}
+body.light-mode .btn.btn2 {
+    background: #222;
+    color: #fff;
+}
+
+body.light-mode .btn.btn2:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+/* Footer */
+body.light-mode .copyright {
+    background: #f7f7f7;
+    color: #222;
+}
+
+
+
+
+
+
+/* Responsive Design */
+
 @media only screen and (max-width: 900px) {
     header{
         background-image: url(images/Udeh_Benjamin-removebg-preview.png);
     }
+    /* For Light Mode */
+    body.light-mode header {
+    background-image: url(images/Udeh_Benjamin-removebg-preview.png);
+    background-color: #ffffff;
+   }
     .head-text{
         margin-top: 70%;
         font-size: 16px;
@@ -453,4 +611,10 @@ nav .fa-solid{
     header{
         background-image: url(images/Udeh_Benjamin-removebg-preview.png);
     }
+
+    /* For Light Mode */
+    body.light-mode header {
+    background-image: url(images/Udeh_Benjamin-removebg-preview.png);
+    background-color: #ffffff;
+   }
 }
